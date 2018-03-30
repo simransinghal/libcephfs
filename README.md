@@ -43,4 +43,16 @@ Output of `$ mount`
 	......
 	......
 	10.2.128.199:40999:/ on /mnt/mycephfs type ceph (rw,relatime,name=admin,secret=<hidden>,acl,wsize=16777216)
-		
+
+My testfile is `helloworld.c`:
+
+	$ sudo cat /mnt/mycephfs/helloworld.c
+	
+	#include <stdio.h>
+	int main()
+	{
+		printf("Hello, World!");
+		return 0;
+	}
+
+
