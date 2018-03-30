@@ -25,6 +25,7 @@ cd into the newly created "build" directory:
 	cd build
 	
 Run:
+
 	sudo make vstart
 
 Start up a ceph cluster:
