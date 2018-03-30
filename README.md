@@ -1,5 +1,9 @@
 # libcephfs
 
+This program computes the sha256sum of a file in CephFS
+
+----------------------------------------------------------
+
 Clone the Ceph source code from here:
 
 	https://github.com/ceph/ceph
