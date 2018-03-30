@@ -65,4 +65,4 @@ Compile sha256sum.c file:
 	
 Execute sha256sum.c:
 
-	/mnt/mycephfs# ./a.out /path/to/ceph.conf helloworld.c 
+	root@user:/mnt/mycephfs# ./a.out /path/to/ceph.conf helloworld.c 
