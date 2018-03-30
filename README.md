@@ -31,3 +31,8 @@ Run:
 Start up a ceph cluster:
 
 	sudo MON=3 OSD=1 MDS=1 MGR=1 RGW=1 ../src/vstart.sh -n -d
+
+Mount the Ceph file system:
+
+	sudo mkdir /mnt/mycephfs
+		
