@@ -59,4 +59,6 @@ Compile sha256sum.c file:
 	
 	gcc sha256sum.c -lcephfs -lssl -lcrypto
 	
-	
+Execute sha256sum.c:
+
+	/mnt/mycephfs# ./a.out /path/to/ceph.conf helloworld.c 
