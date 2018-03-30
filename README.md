@@ -55,4 +55,8 @@ My testfile is `helloworld.c`:
 		return 0;
 	}
 
-
+Compile sha256sum.c file:
+	
+	gcc sha256sum.c -lcephfs -lssl -lcrypto
+	
+	
