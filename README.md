@@ -35,4 +35,5 @@ Start up a ceph cluster:
 Mount the Ceph file system:
 
 	sudo mkdir /mnt/mycephfs
+	sudo mount -t ceph 10.2.128.199:40999:/ /mnt/mycephfs -o name=admin,secret=AQC8lb5acMj/GBAAmgEiAKA3VbZ6daQooGUpSA==
 		
