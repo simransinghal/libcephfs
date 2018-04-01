@@ -57,7 +57,8 @@ Compile sha256sum.c file:
 	
 Execute sha256sum.c:
 
-	root@user:/mnt/mycephfs# ./a.out /path/to/ceph.conf helloworld.c 
+	build$ ./a.out ceph.conf helloworld.c
+	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 	
 As mentioned in project discription page, this code is written using this is as a reference:
 https://github.com/ceph/ceph/blob/d7692a24c74b5e7b6d08eadce03e6b6efa344d61/qa/libceph/trivial_libceph.c
