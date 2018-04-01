@@ -53,7 +53,7 @@ My testfile is `helloworld.c`:
 
 Compile sha256sum.c file:
 	
-	build$ gcc sha256sum.c -lcephfs -lssl -lcrypto -L./lib
+	/build$ gcc sha256sum.c -lcephfs -lssl -lcrypto -L./lib
 	
 Execute sha256sum.c:
 
