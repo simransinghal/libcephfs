@@ -36,17 +36,9 @@ Start up a ceph cluster:
 
 	MON=3 OSD=1 MDS=1 MGR=1 RGW=1 ../src/vstart.sh -n -d
 
-Mount the Ceph file system:
+export:
 
-	sudo mkdir /mnt/mycephfs
-	sudo mount -t ceph 10.2.128.199:40999:/ /mnt/mycephfs -o name=admin,secret=AQC8lb5acMj/GBAAmgEiAKA3VbZ6daQooGUpSA==
-	
-Output of `$ mount`
-
-	......
-	......
-	......
-	10.2.128.199:40999:/ on /mnt/mycephfs type ceph (rw,relatime,name=admin,secret=<hidden>,acl,wsize=16777216)
+	export LD_LIBRARY_PATH=./lib
 
 My testfile is `helloworld.c`:
 
