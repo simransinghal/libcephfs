@@ -7,7 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <sys/statvfs.h>
-#include <cephfs/libcephfs.h>
+#include "../src/include/cephfs/libcephfs.h"
 #include <unistd.h>
 
 #define MB64 (1<<26)
