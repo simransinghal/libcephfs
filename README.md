@@ -30,11 +30,11 @@ cd into the newly created "build" directory:
 	
 Run:
 
-	sudo make vstart
+	make vstart
 
 Start up a ceph cluster:
 
-	sudo MON=3 OSD=1 MDS=1 MGR=1 RGW=1 ../src/vstart.sh -n -d
+	MON=3 OSD=1 MDS=1 MGR=1 RGW=1 ../src/vstart.sh -n -d
 
 Mount the Ceph file system:
 
