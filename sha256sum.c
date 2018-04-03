@@ -16,7 +16,7 @@ int main(int argc, const char **argv)
 {
 	struct ceph_mount_info *cmount;
 	int ret, fd, len;
-	char buffer[102];
+	char buffer[1024];
 	unsigned char hash[SHA256_DIGEST_LENGTH];
 
 	if (argc < 3) {
