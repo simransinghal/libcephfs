@@ -61,7 +61,7 @@ int main(int argc, const char **argv)
 		exit(1);
 	}
 
-        memset(buffer, 'b', sizeof(buffer));
+        memset(buffer, 'a', sizeof(buffer));
 
 	len = ceph_write(cmount, fd, buffer, sizeof(buffer), 0);
 	if (len < 0) {
