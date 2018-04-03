@@ -25,14 +25,11 @@ int sha256_file(char *path)
 	SHA256_CTX sha256;
 	SHA256_Init(&sha256);
 
-	const int bufSize = 32768;
-	unsigned char *buffer = malloc(bufSize);
 	int bytesRead = 0;
-	if(!buffer) return ENOMEM;
-	while((bytesRead = fread(buffer, 1, bufSize, file)))
+	while((bytesRead = fread(buf, 1, sizeof(buf), file)))
 	{
 		printf("bytesRead is %d\n",bytesRead);
-		SHA256_Update(&sha256, buffer, bytesRead);
+		SHA256_Update(&sha256, buf, bytesRead);
 	}
 	SHA256_Final(hash, &sha256);
 
@@ -42,7 +39,6 @@ int sha256_file(char *path)
 	putchar('\n');
 
 	fclose(file);
-	free(buffer);
 	return 0;
 }
 int main(int argc, char **argv)
