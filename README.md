@@ -40,25 +40,18 @@ export:
 
 	export LD_LIBRARY_PATH=./lib
 
-My testfile is `helloworld.c`:
-
-	$ sudo cat /mnt/mycephfs/helloworld.c
-	
-	#include <stdio.h>
-	int main()
-	{
-		printf("Hello, World!");
-		return 0;
-	}
-
 Compile sha256sum.c file:
 	
 	/build$ gcc sha256sum.c -lcephfs -lssl -lcrypto -L./lib
 	
 Execute sha256sum.c:
 
-	build$ ./a.out ceph.conf helloworld.c
-	e42c89335961c5b03eb86eb1e1bbb96f62a38f791f215af17112229f28bb968a
+	build$ ./a.out ceph.conf <file>
+
+Output:
+	wrote 1024 bytes
+	read 1024 bytes
+	0c66f2c45405de575189209a768399bcaf88ccc51002407e395c0136aad2844d
 	
-As mentioned in project discription page, this code is written using this is as a reference:
+As mentioned in project discription page, this code is written using this as a reference:
 https://github.com/ceph/ceph/blob/d7692a24c74b5e7b6d08eadce03e6b6efa344d61/qa/libceph/trivial_libceph.c
