@@ -66,7 +66,7 @@ Output:
 
 And as verify_sha256sum.c has written in file <some_file>, this can be verified using:
 
-	$ sha256sum <some-file>
+	$ sha256sum <some_file>
 	2edc986847e209b4016e141a6dc8716d3207350f416969382d431539bf292e4a  <some_file> 
 		
 As mentioned in project discription page, this code is written using this as a reference:
