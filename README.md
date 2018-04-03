@@ -49,6 +49,7 @@ Execute sha256sum.c:
 	build$ ./a.out ceph.conf <file>
 
 Output:
+
 	wrote 1024 bytes
 	read 1024 bytes
 	0c66f2c45405de575189209a768399bcaf88ccc51002407e395c0136aad2844d
